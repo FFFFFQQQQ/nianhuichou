@@ -8,15 +8,24 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.14.1",
     "register-service-worker": "^1.7.1",
-    "vue": "^2.6.11"
+    "screenfull": "^5.0.2",
+    "swiper": "^6.3.5",
+    "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-canvas-countdown": "^1.0.1",
+    "vue-let-it-snow": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-pwa": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "axios": "^0.21.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   }
 }

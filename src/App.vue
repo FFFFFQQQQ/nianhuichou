@@ -1,28 +1,63 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+    <index></index>
+    <!-- <Choujiang></Choujiang> -->
+    <!-- <HelloWorld></HelloWorld> -->
+    <!-- <Zhongjiangmingdan></Zhongjiangmingdan> -->
+    <danmu ref="danmu"></danmu>
+    <!-- 底部控制 -->
+    <bottom></bottom>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld'
+import index from './components/index'
+import bottom from './components/bottom'
+import Choujiang from './components/Choujiang'
+import Zhongjiangmingdan from './components/Zhongjiangmingdan'
+import danmu from './components/danmu'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    components:{
+      HelloWorld,
+      index,
+      bottom,
+      Choujiang,
+      Zhongjiangmingdan,
+      danmu
+    },
+    data () {
+      return {
+    }
+    },
+    onShow(){
+      
+    },
+    onLoad() {
+		},
+    methods: {
+      add(){
+        this.$ref.danmu.add()
+      }
+	  },
+    mounted () {
+      
+      //  this.$api.getXyb({
+      //    openId:"oTz3u4r5fSNYDfms0InIXy07D-H8"
+      //   }).then(res => {
+      //       console.log(res);
+      //   })
+    }
   }
-}
 </script>
-
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('../src/img/party-bg.21ac4a9f.png') ;
+   background-size:100% 100%;
+   background-attachment:fixed;
+  }
 </style>
